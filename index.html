@@ -23,7 +23,7 @@
                 <p id="dummy-text-three">You <em>know</em> you want to.</p>
             </div>
             <!--action attribute tells the form where data should be sent, in form of URL, this is a dummy form hence #-->
-            <form action="#">
+            <form action="#" method="post">
                 <p>Let's do this!</p>
 
                 <div class="form-div">
@@ -39,19 +39,19 @@
                     </div>
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="email" id="email"  pattern="(\d{5}([\-]\d{4})?)" required>
+                        <input type="email" id="email"  required>
                     </div>
                     <div class="input">
                         <label for="phone_number">Phone number</label>
-                        <input type="number" id="phone_number">
+                        <input type="number" id="phone_number" min="0">
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="password" id="password" pattern="(\d{5}([\-]\d{4})?)" required>
+                        <input class="error" type="password" id="password" required>
                     </div>
                     <div class="input">
                         <label for="confirm-password">Confirm password</label>
-                        <input type="password" id="confirm-password" pattern="(\d{5}([\-]\d{4})?)" required>
+                        <input class="error" type="password" id="confirm-password" required>
                     </div>
                 </div>
             </form>
